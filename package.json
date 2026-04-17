@@ -1,0 +1,49 @@
+{
+  "name": "trident-plugin",
+  "version": "1.0.0",
+  "description": "Trident: Ambient memory infrastructure for OpenClaw agents. Three-tier persistent memory (daily logs, curated long-term, project-scoped) with LCM integration.",
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "openclaw",
+    "memory",
+    "agent",
+    "persistent",
+    "skill",
+    "recall",
+    "continuity"
+  ],
+  "author": "Shiva (ShivaClaw)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ShivaClaw/trident-plugin.git"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "files": [
+    "SKILL.md",
+    "README.md",
+    "INSTALL.md",
+    "MIGRATION.md",
+    "plugin-manifest.json",
+    "config.schema.json",
+    "references/",
+    "examples/"
+  ],
+  "clawhub": {
+    "type": "skill",
+    "category": "memory",
+    "tags": [
+      "memory",
+      "persistence",
+      "agent",
+      "recall",
+      "continuity"
+    ]
+  }
+}
