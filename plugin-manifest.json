@@ -1,5 +1,5 @@
 {
-  "name": "trident",
+  "name": "project-trident-plugin",
   "version": "2.0.0",
   "description": "Five-tier persistent memory for OpenClaw agents. Lossless capture (SQLite) → intelligent routing → hierarchical storage → semantic recall (Qdrant+FalkorDB) → disaster recovery. Native binaries, zero Docker required, $0 self-hosted.",
   "author": {

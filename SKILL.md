@@ -1,5 +1,5 @@
 ---
-name: trident
+name: project-trident-plugin
 description: Permanent memory for OpenClaw agents. Lossless capture, intelligent routing, semantic recall, and disaster recovery in five tiers.
 version: "2.0.0"
 author: Shiva
