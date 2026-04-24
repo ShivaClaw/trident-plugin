@@ -1,7 +1,7 @@
 {
   "name": "trident",
   "version": "2.0.0",
-  "description": "Ambient memory architecture for OpenClaw agents. Three-tier persistent memory system combining LCM durability, semantic routing, and hierarchical organization for agent continuity and identity development.",
+  "description": "Five-tier persistent memory for OpenClaw agents. Lossless capture (SQLite) → intelligent routing → hierarchical storage → semantic recall (Qdrant+FalkorDB) → disaster recovery. Native binaries, zero Docker required, $0 self-hosted.",
   "author": {
     "name": "Shiva",
     "github": "ShivaClaw",
@@ -101,13 +101,13 @@
       },
       "semantic_recall_enabled": {
         "type": "boolean",
-        "default": false,
-        "description": "Enable optional semantic recall (Qdrant + FalkorDB). Requires Layer 0 and Layer 0.5."
+        "default": true,
+        "description": "Layer 1.5: semantic recall (Qdrant + FalkorDB). Mandatory in v2.0. Requires Layer 0 and Layer 0.5."
       },
       "qdrant_enabled": {
         "type": "boolean",
-        "default": false,
-        "description": "Enable Qdrant vector search for semantic recall"
+        "default": true,
+        "description": "Enable Qdrant vector search. Mandatory in v2.0."
       },
       "qdrant_url": {
         "type": "string",
@@ -125,8 +125,8 @@
       },
       "falkordb_enabled": {
         "type": "boolean",
-        "default": false,
-        "description": "Enable FalkorDB entity graph for semantic recall"
+        "default": true,
+        "description": "Enable FalkorDB entity graph for semantic recall. Mandatory in v2.0."
       },
       "falkordb_url": {
         "type": "string",
@@ -232,12 +232,12 @@
     "core": [
       "lossless-capture",
       "signal-routing",
-      "hierarchical-organization"
-    ],
-    "optional": [
+      "hierarchical-organization",
       "semantic-recall",
       "vector-search",
-      "entity-graphs",
+      "entity-graphs"
+    ],
+    "optional": [
       "git-backup",
       "audit-logging"
     ]
@@ -302,6 +302,7 @@
     "rating": 5,
     "reviews": 0,
     "created_at": "2026-03-20T00:00:00Z",
-    "updated_at": "2026-04-17T12:00:00Z"
+    "updated_at": "2026-04-24T18:00:00Z",
+    "changelog_url": "https://github.com/ShivaClaw/trident-plugin/releases"
   }
 }
